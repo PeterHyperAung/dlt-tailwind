@@ -1,0 +1,64 @@
+https://tailwindcss.com
+
+Integrate Methods
+1.Using CDN Link ( Content Deliver Network )
+2.Using Tailwind CLI
+3.Using PostCSS
+
+
+
+Terminal = VS code
+Nodejs
+
+
+For Linux
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nodejs
+
+node -v
+
+
+1. Using CDN
+<script src="https://cdn.tailwindcss.com"></script> 
+- only works if there is internet
+- download it if you wanna code tailwind offline
+
+2. Using PostCSS
+=open folder "usingpostcss"
+=open terminal
+npm install -D tailwindcss postcss autoprefixer
+=>Create tailwind css file
+npx tailwindcss init
+=>Add PostCSS file
+postcss.config.js
+copy and paste code
+=go to tailwind.config.js
+=and write down in content:["./public/**/*.html"]
+
+. = current folder
+** = all folders inside public folder
+* = all filename 
+
+=> Create Tailwind main files
+=create new folder and naming "tailwind"
+=create file called "main.css" in "tailwind" folder
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+=Build process
+Write down the following command in terminal (so it will create package.json file)
+npm init -y
+Write down in package.json > "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"build": "npx tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css --watch"
+}
+
+-i = install
+-o = open
+
+=go to terminal and enter "npm run build"
+
+27NM
+28BD
