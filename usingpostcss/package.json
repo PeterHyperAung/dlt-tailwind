@@ -70,7 +70,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css --watch"
+    "build": "npx tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css",
+    "watch": "npx tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css --watch"
   },
   "keywords": [],
   "author": "",

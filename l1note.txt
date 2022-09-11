@@ -60,5 +60,15 @@ Write down in package.json > "scripts": {
 
 =go to terminal and enter "npm run build"
 
+=>Watch
+go to package.jason,write down
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwind -i ./tailwind/main.css -o ./public/tailwind.css",
+    "watch": "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css -w"
+  },
+
+
 27NM
 28BD
